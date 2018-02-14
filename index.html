@@ -13,7 +13,7 @@
     };
     function redirect(b) {window.location.href=b;}
     function getHTTPParam(x) {return httpParams[x];}
-    if (window.location.search.substr(1).contains("f=")) {
+    if (window.location.search.substr(1).includes("f=")) {
       redirect(files[getHTTPParam("f")]);
     } else {
       redirect("https://jhnuxer.github.io/Files/landing.html");
